@@ -1,44 +1,40 @@
 import { Routes } from '@angular/router';
-import { CreateUserComponent } from './pages/counter/create-user.component';
-import { DragonballPageComponent } from './pages/dragonball/dragonball-page.component';
-import { CounterHomeComponent } from './pages/counter/counter-home.component';
-import { CounterHeroComponent } from './pages/counter/counter-hero.component';
-import { DragonballSuperPageComponent } from './pages/dragonball-super/dragonball-super-page.component';
-import { CounterMovilComponent } from './pages/counter/counter-movil.component';
-import { CounterDesarrolloComponent } from './pages/counter/counter-desarrollo.component';
+import { LimpiezaRespaldosComponent } from './pages/limpieza-respaldos/limpieza-respaldos.component';
+import { CableadoEstructuradoComponent } from './pages/cableado-estructurado/cableado-estructurado.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MantenimientoComponent } from './pages/mantenimiento/mantenimiento.component';
+import { CircuitoCerradoComponent } from './pages/circuito-cerrado/circuito-cerrado.component';
+import { ReparacionMovilComponent } from './pages/reparacion-movil/reparacion-movil.component';
+import { DesarrolloSoftwareComponent } from './pages/desarrollo-software/desarrollo-software.component';
 
 
 export const routes: Routes = [
-{
-  path: '',
-  component: CounterHomeComponent
-
-},
-{
-  path: 'mantenimiento',
-  component: CounterHeroComponent
-},
-
-{
-  path: 'cableado-estructurado',
-  component:DragonballPageComponent
-},
-{
-  path: 'circuito-cerrado',
-  component:DragonballSuperPageComponent
-
-},
-{
-  path: 'limpieza-respaldos',
-  component: CreateUserComponent
-},
-{
-  path: 'reparacion-movil',
-  component: CounterMovilComponent
-},
-{
-  path: 'desarrollo-software',
-  component: CounterDesarrolloComponent
-}
-
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'mantenimiento',
+    component: MantenimientoComponent
+  },
+  {
+    path: 'cableado-estructurado',
+    component: CableadoEstructuradoComponent
+  },
+  {
+    path: 'circuito-cerrado',
+    component: CircuitoCerradoComponent
+  },
+  {
+    path: 'limpieza-respaldos',
+    component: LimpiezaRespaldosComponent
+  },
+  {
+    path: 'reparacion-movil',
+    component: ReparacionMovilComponent
+  },
+  {
+    path: 'desarrollo-software',
+    component: DesarrolloSoftwareComponent
+  }
 ];

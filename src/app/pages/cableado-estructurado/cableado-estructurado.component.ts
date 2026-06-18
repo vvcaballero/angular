@@ -8,10 +8,10 @@ interface Character {
 }
 
 @Component ({
-  templateUrl: './dragonball-page.component.html',
+  templateUrl: './cableado-estructurado.component.html',
 })
 
-export class DragonballPageComponent {
+export class CableadoEstructuradoComponent {
 
   name = signal('gohan');
   power = signal(100);

@@ -1,57 +1,16 @@
-<style>
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background-color: #264653; /* Azul verdoso oscuro */
-    color: white;
-    padding: 1rem 2rem;
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
-  }
-
-  nav a:hover {
-    color: #F4A261; /* Naranja suave */
-    border-bottom: 2px solid #F4A261;
-  }
-
-  nav a.active {
-    color: #E76F51; /* Rojo terracota */
-    border-bottom: 2px solid #E76F51;
-  }
-
-  @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    nav a {
-      padding: 0.5rem 0;
-    }
-  }
-
-</style>
-
-
 <nav>
-  <a routerLink="/" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">HOME</a>
-  <a [routerLink]="['/mantenimiento']" [routerLinkActive]="'active'">MANTENIMIENTO</a>
-  <a [routerLink]="['/limpieza-respaldos']" [routerLinkActive]="'active'">LIMPIEZA Y RESPALDOS</a>
-  <a [routerLink]="['/cableado-estructurado']" [routerLinkActive]="'active'">CABLEADO ESTRUCTURADO</a>
-  <a routerLink="/circuito-cerrado" routerLinkActive="active">CIRCUITO CERRADO</a>
-  <a routerLink="/reparacion-movil" routerLinkActive="active">REPARACION MOVIL</a>
-  <a routerLink="/desarrollo-software" routerLinkActive="active">DESARROLLO WEB Y SOFTWARE A LA MEDIDA</a>
+  <div class="nav-inner">
+    <div class="brand">TI Consultoría</div>
+    <div class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+      <a [routerLink]="['/mantenimiento']" routerLinkActive="active">MANTENIMIENTO</a>
+      <a [routerLink]="['/limpieza-respaldos']" routerLinkActive="active">LIMPIEZA Y RESPALDOS</a>
+      <a [routerLink]="['/cableado-estructurado']" routerLinkActive="active">CABLEADO ESTRUCTURADO</a>
+      <a routerLink="/circuito-cerrado" routerLinkActive="active">CIRCUITO CERRADO</a>
+      <a routerLink="/reparacion-movil" routerLinkActive="active">REPARACION MOVIL</a>
+      <a routerLink="/desarrollo-software" routerLinkActive="active">DESARROLLO WEB Y SOFTWARE A LA MEDIDA</a>
+    </div>
+  </div>
 </nav>
 
 
